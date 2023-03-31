@@ -1,0 +1,362 @@
+<style>
+body {
+  font-size: 20px;
+  height: 1200px;
+}
+
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: coral;*/
+  /*position: -webkit-sticky;*/ /* Safari */
+  /*position: sticky;
+  top: 0;
+}*/
+
+ol {
+  margin: 3px 5px 3px 5px;
+  padding: 3px 5px 3px 5px;
+  
+}
+/*li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}*/
+
+li.row2 a.row2link:hover {
+  background-color: red;
+}
+/*li.toplink {
+  border-right: 1px solid #bbb;
+}*/
+li.row2  a.row2link{
+  border: none;
+  text-align: left;
+  padding: 3px 3px;
+  margin: 3px 3px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*li:last-child {
+  border-right: none;
+}*/
+
+a.row2link.active {
+  background-color: #4CAF50;
+}
+
+/*@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+li.toplink a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}*/
+
+li.row2 a.row2link:hover,  {
+  background-color: red;
+}
+
+/*li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+ul.toplink {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li.toplink {
+  float: left;
+
+}
+
+li.toplink a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #38444d;
+
+}
+
+li.toplink a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: green /*#f1f1f1;*/
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* ====================Begining of row 1=================================== */
+
+/* Body row1 for static pictures */
+.column1 {
+  float: left;
+  width: 442px;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* ===============================beigining of row 2=================================== */
+
+/* Create three equal columns2 that floats next to each other */
+.column2left {
+  float: left;
+  width: 19%;
+  padding: 10px;
+  height: 50%; /* Should be removed. Only for demonstration */
+}
+.column2middle {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+.column2right {
+  background-color: black;
+  float: left;
+  width: 21%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ================================Begining of row 3==================================== */
+
+/* Create three equal columns2 that floats next to each other */
+.column3left {
+  float: left;
+  width: 19%;
+  padding: 2px;
+  height: 420px; /* Should be removed. Only for demonstration */
+}
+.column3middle {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 420px; /* Should be removed. Only for demonstration */
+}
+.column3right {
+  float: left;
+  width: 21%;
+  padding: 2px;
+  height: 420px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* =========================================================================================== */
+/* Style the footer 
+.footer {
+  background-color: none;
+  padding: 10px;
+  color: white;
+  height: 20px;
+}
+.foot1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 8px solid red;
+  text-align: justify;
+   
+}
+.foot2 {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  text-align: justify;
+    */
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column1, .column3, .column2left, .column2right, .column2middle .header,.column3left, .column3right, .column3middle {
+    width: 100%;
+  }
+}
+
+.displaydiv {
+  
+  background-color: #ffeeec;
+}
+
+
+.button {
+  display: ruby-base-container;
+  width: 85px;
+  padding: 5px;
+  font-size: 14px;
+  border: groove;
+  background-color: whitesmoke;
+  a: hover;
+  
+
+}
+.column4 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+/*.row4:after {
+  content: "";
+  display: table;
+  clear: both;*/
+}
+
+
+img.imgrow1 {
+  height: 300px;
+  width: 350px;  
+  display: inline-block;
+  float: left;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+#wrapper {
+  margin: 0 auto;
+  height: 100%;
+  background: #ff9;
+  a: hover;
+}
+#wrapper div {
+  /*overflow:hidden; /* optional, hide eventual odd pixels overflow */
+  width: 800px;
+  width: 100%;
+  height: 800px;
+  height: 800px;
+  a: hover;
+}
+#wrapper div div{
+  float: left;
+  height: 25%;
+  width: 25%;
+  margin: 0;
+  a: hover;
+}
+#wrapper .odd{
+  margin-right:-4px; /* avoid wrap when calculated odd pixels are added */
+  a: hover;
+}
+  img:hover {
+  border: 5px solid #555;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
